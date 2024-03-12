@@ -19,6 +19,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .logoimage {
     max-width: 200px; 
@@ -171,6 +172,37 @@ footer p {
     font-variant: small-caps;
     text-align: center;
     font-weight: 600;
+}
+
+
+#mobilemenu{
+    display: none;
+}
+
+/* Meida Queries */
+
+
+@media (max-width: 767px){
+
+    #nav_menu{
+        display: none;
+    }
+
+    #mobilemenu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slicknav_menu{
+        background-color: transparent;
+    }
+
+    .slicknav_nav a{
+        text-shadow: 3px 3px 10px white;
+    }
+
 }
 
 
